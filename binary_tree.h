@@ -1,4 +1,9 @@
-//SOLUTION
+/*
+   File: binary_tree.h
+   Description: Decision Tree
+   Author: Ryan Ignasiak
+   Email: ignasiakr@student.vvc.edu
+*/
 #ifndef BINARY_TREE_H
 #define BINARY_TREE_H
 
@@ -71,6 +76,8 @@ public:
     */
     Binary_tree right() const;
 
+    void set(string root_data, Binary_tree left, Binary_tree right);
+
 private:
     /**
        Returns the height of the subtree whose root is the given node.
@@ -83,6 +90,3 @@ private:
 };
 
 #endif
-
-
-
