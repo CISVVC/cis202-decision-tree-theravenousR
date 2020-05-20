@@ -1,4 +1,9 @@
-//SOLUTION
+/*
+   File: binary_tree.cpp
+   Description: Decision Tree
+   Author: Ryan Ignasiak
+   Email: ignasiakr@student.vvc.edu
+*/
 #include <algorithm>
 #include "binary_tree.h"
 
@@ -66,5 +71,10 @@ Binary_tree Binary_tree::right() const
     return result;
 }
 
-
-
+void Binary_tree::set(string root_data, Binary_tree left, Binary_tree right)
+{
+    //root = new Node;
+    root->data = root_data;
+    root->left = left.root;
+    root->right = right.root;
+}
