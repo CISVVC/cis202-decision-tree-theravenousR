@@ -60,7 +60,7 @@ int main(int argc,char **argv) {
     }
     Binary_tree root;  
     //  get the filename from the command line arguments
-    std::ifstream in_file("questions.dat");
+    std::ifstream in_file(argv[1]);
     //  open the file stream
     //  initialize the root Binary_tree variable with data from the 
     //  file stream to initialize the decision tree root by calling
@@ -124,5 +124,5 @@ int main(int argc,char **argv) {
       }
 
       }
-
+      return 0;
 }
