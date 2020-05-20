@@ -97,7 +97,7 @@ int main(int argc,char **argv) {
 
         if (response == "n") {
           done = true;
-          std::ofstream out_file("questions.dat");
+          std::ofstream out_file(argv[1]);
           write(out_file, root, 0);
         }
         else {
